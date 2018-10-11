@@ -1,0 +1,126 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[10pt, a4paper]{article}
+\usepackage{fontspec} 
+
+% DOCUMENT LAYOUT
+\usepackage{geometry} 
+\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in}
+
+% FONTS
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
+%\setmonofont[Scale=0.8]{Monaco}
+\setmainfont[
+  Ligatures={Common}, Numbers={OldStyle}, Variant=01,
+  BoldFont=LinLibertine_RB.otf,
+  ItalicFont=LinLibertine_RI.otf,
+  BoldItalicFont=LinLibertine_RBI.otf
+]{LinLibertine_R.otf}
+\setmonofont[Scale=0.8]{DejaVuSansMono.ttf}
+
+\usepackage{marginnote}
+\newcommand{\interval}[2]{\small{#1 - #2}}
+\newcommand{\institution}[1]{\normalsize{#1}}
+\newcommand{\position}[1]{\large{#1}}
+\newcommand{\course}[2]{\position{\textsc{#1} #2}}
+\newcommand{\desc}[1]{\normalsize{#1}}
+
+% HEADINGS
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\mdseries\upshape\Large}
+\subsectionfont{\mdseries\scshape\normalsize} 
+
+% PDF
+\usepackage[%dvipdfm, 
+bookmarks, colorlinks, breaklinks, 
+	pdftitle={Andreas Kittilsland - Curriculum Vitae}
+]{hyperref}  
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} 
+
+% DOCUMENT
+\begin{document}
+{\LARGE Andreas Kittilsland}\\
+{\large Curriculum Vitae}\\[14pt]
+Trollringen 68, 9016 Tromsø\\
+Mobil: +47 410 82 365\\
+E-mail: \href{mailto:andreas@kittilsland.net}{andreas@kittilsland.net}\\
+Fødselsdato: 27. august 1991\\
+Statsborgerskap: Norge
+
+\section*{Erfaring}
+
+\interval{1. september 2016}{pågår}\\
+\institution{DIPS AS}\\
+\position{Systemutvikler}\\
+\desc{Utvikling av timebestillingsløsninger i DIPS Arena (en elektronisk pasientjournal for sykehus), samt vedlikehold av timebestillingstjenester}\\
+
+\interval{13. juni 2016}{31. august 2016}\\
+\institution{DIPS ASA}\\
+\position{Systemutvikler - Sommerjobb}\\
+\desc{Utvikling av timebestillingsløsninger i DIPS Arena}\\
+
+\section*{Utdannelse}
+
+\interval{August 2014}{Juni 2016}\\
+\institution{Universitetet i Tromsø}\\
+\course{MSc}{Computer Science}\\
+
+\interval{August 2013}{Juni 2014}\\
+\institution{Universitetet i Tromsø}\\
+\course{}{Årsstudium i historie}\\
+
+\interval{August 2010}{Mai 2013}\\
+\institution{Hong Kong University of Science and Technology}\\
+\course{BEng}{Computer Science}\\
+
+\interval{August 2008}{Juni 2010}\\
+\institution{Tyrifjord Videregående Skole}\\
+\course{}{Studiespesialiserende}\\
+\desc{
+  Valgfag: 
+  \begin{itemize}
+  \itemsep0.5pt
+  \item Matematikk R1
+  \item Matematikk R2
+  \item Fransk
+  \item Geo-X
+  \item Fysikk 1
+  \item Fysikk 2
+  \item Kjemi 1
+  \item Kjemi 2
+  \end{itemize}
+}
+
+\interval{August 2007}{Juni 2008}\\
+\institution{Greveskogen Videregående Skole}\\
+\course{}{Studiespesialiserende}\\
+\desc{
+  Valgfag: 
+  \begin{itemize}
+  \itemsep0.5pt
+  \item Matematikk T1
+  \item Fransk
+  \end{itemize}
+}
+
+\section*{Annet}
+
+\interval{2005}{2017}\\
+\institution{Hope Channel Tyrifjord Radio}\\
+\course{}{Webansvarlig}\\
+\desc{Frivillig arbeid som webansvarlig for http://www.adventkirken-tonsberg.org}\\
+
+\interval{2009}{2010}\\
+\institution{Hope Channel Tyrifjord Radio}\\
+\course{}{Teknikker}\\
+\desc{Frivillig arbeid som lyd- og programteknikker}
+
+
+\end{document}
